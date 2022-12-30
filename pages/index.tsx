@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { CardProduct } from "../componets/CardProduct";
-import { ListComponent } from "../componets/ListComponent";
+import { CardProduct } from "../components/CardProduct";
+import { ListComponent } from "../components/listComponent";
 import { getDataML } from "../util/api-ml";
 
 export default function Home(props) {
@@ -18,7 +18,7 @@ export default function Home(props) {
 
       <ListComponent productos={props.productos} />
       <Link href="/list">
-        <a>Ver productos</a>
+        <p>Ver productos</p>
       </Link>
     </div>
   );

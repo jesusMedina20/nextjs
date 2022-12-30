@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
-import { CardProduct } from "../componets/CardProduct";
-import { ListComponent } from "../componets/ListComponent";
+import { CardProduct } from "../components/CardProduct";
+import { ListComponent } from "../components/listComponent";
 import { getDataML } from "../util/api-ml";
 
 const List = (props) => {
@@ -14,7 +14,7 @@ const List = (props) => {
       <h2>Soy la pagina de Produts</h2>
       <ListComponent productos={props.productos} />
       <Link href="/">
-        <a>Ir a la home</a>
+        <p>Ir a la home</p>
       </Link>
     </div>
   );
